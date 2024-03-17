@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:login_screen/screens/home.dart';
 import 'package:login_screen/utils/helper_functions.dart';
 
 import '../../../utils/constants.dart';
@@ -57,17 +56,13 @@ class _LoginContentState extends State<LoginContent>
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 135, vertical: 16),
       child: ElevatedButton(
-        onPressed: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => const FigmaToCodeApp(),)
-          );
-        },
+        onPressed: () {},
         style: ElevatedButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 14),
           shape: const StadiumBorder(),
-          backgroundColor: kSecondaryColor,
+          primary: kSecondaryColor,
           elevation: 8,
-          shadowColor: kTuruncu,
+          shadowColor: Colors.black87,
         ),
         child: Text(
           title,
@@ -91,6 +86,16 @@ class _LoginContentState extends State<LoginContent>
               color: kPrimaryColor,
             ),
           ),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16),
+            child: Text(
+              'or',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
           Flexible(
             child: Container(
               height: 1,
@@ -108,10 +113,9 @@ class _LoginContentState extends State<LoginContent>
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset('assets/images/logo.png',
-              width: 200,
-              height: 200,
-          ),
+          Image.asset('assets/images/facebook.png'),
+          const SizedBox(width: 24),
+          Image.asset('assets/images/google.png'),
         ],
       ),
     );
@@ -123,7 +127,7 @@ class _LoginContentState extends State<LoginContent>
       child: TextButton(
         onPressed: () {},
         child: const Text(
-          'Şifremi Unuttum',
+          'Forgot Password?',
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w600,
@@ -137,18 +141,18 @@ class _LoginContentState extends State<LoginContent>
   @override
   void initState() {
     createAccountContent = [
-      inputField('İsim', Ionicons.person_outline),
+      inputField('Name', Ionicons.person_outline),
       inputField('Email', Ionicons.mail_outline),
-      inputField('Şifre', Ionicons.lock_closed_outline),
-      loginButton('Kayıt Ol'),
+      inputField('Password', Ionicons.lock_closed_outline),
+      loginButton('Sign Up'),
       orDivider(),
       logos(),
     ];
 
     loginContent = [
       inputField('Email', Ionicons.mail_outline),
-      inputField('Şifre', Ionicons.lock_closed_outline),
-      loginButton('Giriş Yap'),
+      inputField('Password', Ionicons.lock_closed_outline),
+      loginButton('Log In'),
       forgotPassword(),
     ];
 

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "720468597485",
+    "project_id": "route-it-out",
+    "storage_bucket": "route-it-out.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720468597485:android:e2a52aae51590fba8b8ae4",
+        "android_client_info": {
+          "package_name": "com.example.login_screen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARpcFCwghNab_Pf99mOHeoOFHW07Kisdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
