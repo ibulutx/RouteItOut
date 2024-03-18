@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import '/screens/searchbar.dart';
-import '/screens/navbar.dart';
 
 void main() {
   runApp(const FigmaToCodeApp());
@@ -221,7 +219,8 @@ class Iphone13141 extends StatelessWidget {
                                                   mainAxisAlignment: MainAxisAlignment.start,
                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                   children: [
-                                                    SearchBarApp(),                                            ],
+
+                                                  ],
                                                 ),
                                               ),
                                             ],
@@ -1304,7 +1303,16 @@ class Iphone13141 extends StatelessWidget {
                                                   mainAxisAlignment: MainAxisAlignment.start,
                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                   children: [
-                                                   NavigationBarApp(),
+                                                    Text(
+                                                      'Üsküdar / İstanbul',
+                                                      style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontSize: 12,
+                                                        fontFamily: 'Poppins',
+                                                        fontWeight: FontWeight.w400,
+                                                        height: 0,
+                                                      ),
+                                                    ),
                                                   ],
                                                 ),
                                               ),
