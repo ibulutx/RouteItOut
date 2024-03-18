@@ -35,8 +35,8 @@ class Kesfet extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 390,
-          height: 1269,
+          width: 400,
+          height: 812,
           clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -47,7 +47,7 @@ class Kesfet extends StatelessWidget {
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Expanded(
@@ -242,27 +242,37 @@ class Kesfet extends StatelessWidget {
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
                                               Container(
-                                                child: Column(
+                                                height: 84,
+                                                child:Column(
                                                   mainAxisSize: MainAxisSize.min,
                                                   mainAxisAlignment: MainAxisAlignment.start,
                                                   crossAxisAlignment: CrossAxisAlignment.center,
                                                   children: [
                                                     Container(
-                                                      padding: const EdgeInsets.all(10),
+                                                      padding: const EdgeInsets.all(1),
                                                       child: Column(
                                                         mainAxisSize: MainAxisSize.min,
                                                         mainAxisAlignment: MainAxisAlignment.start,
                                                         crossAxisAlignment: CrossAxisAlignment.start,
                                                         children: [
                                                           Container(
-                                                            width: 314,
-                                                            height: 45,
-                                                            decoration: ShapeDecoration(
-                                                              color: Colors.white,
-                                                              shape: RoundedRectangleBorder(
-                                                                borderRadius: BorderRadius.circular(33.50),
+
+
+                                                              child: TextField(
+                                                                decoration: InputDecoration(
+                                                                  labelText: 'Search',
+                                                                  hintText: 'Search...',
+                                                                  prefixIcon: Icon(Icons.search),
+                                                                  border: OutlineInputBorder(),
+                                                                ),
+                                                                onChanged: (value) {
+                                                                  // Implement your search logic here
+                                                                  print('Search query: $value');
+                                                                },
                                                               ),
-                                                            ),
+
+
+
                                                           ),
                                                         ],
                                                       ),
@@ -270,76 +280,7 @@ class Kesfet extends StatelessWidget {
                                                   ],
                                                 ),
                                               ),
-                                              const SizedBox(height: 4),
-                                              Container(
-                                                padding: const EdgeInsets.symmetric(vertical: 10),
-                                                child: Row(
-                                                  mainAxisSize: MainAxisSize.min,
-                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                                  children: [
-                                                    Container(
-                                                      child: Column(
-                                                        mainAxisSize: MainAxisSize.min,
-                                                        mainAxisAlignment: MainAxisAlignment.center,
-                                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                                        children: [
-                                                          Container(
-                                                            width: 94,
-                                                            height: 26,
-                                                            decoration: ShapeDecoration(
-                                                              color: Colors.white,
-                                                              shape: RoundedRectangleBorder(
-                                                                borderRadius: BorderRadius.circular(33.50),
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                    const SizedBox(width: 15),
-                                                    Container(
-                                                      child: Column(
-                                                        mainAxisSize: MainAxisSize.min,
-                                                        mainAxisAlignment: MainAxisAlignment.center,
-                                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                                        children: [
-                                                          Container(
-                                                            width: 94,
-                                                            height: 26,
-                                                            decoration: ShapeDecoration(
-                                                              color: Colors.white,
-                                                              shape: RoundedRectangleBorder(
-                                                                borderRadius: BorderRadius.circular(33.50),
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                    const SizedBox(width: 15),
-                                                    Container(
-                                                      child: Column(
-                                                        mainAxisSize: MainAxisSize.min,
-                                                        mainAxisAlignment: MainAxisAlignment.center,
-                                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                                        children: [
-                                                          Container(
-                                                            width: 94,
-                                                            height: 26,
-                                                            decoration: ShapeDecoration(
-                                                              color: Colors.white,
-                                                              shape: RoundedRectangleBorder(
-                                                                borderRadius: BorderRadius.circular(33.50),
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
+
                                             ],
                                           ),
                                         ),
@@ -568,7 +509,7 @@ class Kesfet extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 8, left: 2, bottom: 8),
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
@@ -616,22 +557,22 @@ class Kesfet extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        height: 764,
+                        height: 307,
                         padding: const EdgeInsets.only(top: 22, bottom: 10),
                         clipBehavior: Clip.antiAlias,
                         decoration: BoxDecoration(color: Colors.white.withOpacity(0)),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.end,
+                          mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
                               width: double.infinity,
-                              height: 732,
+                              height: 275,
                               padding: const EdgeInsets.symmetric(horizontal: 15),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
-                                mainAxisAlignment: MainAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Container(
@@ -912,465 +853,10 @@ class Kesfet extends StatelessWidget {
                                       ],
                                     ),
                                   ),
-                                  const SizedBox(height: 12),
-                                  Container(
-                                    height: 81,
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.start,
-                                            crossAxisAlignment: CrossAxisAlignment.center,
-                                            children: [
-                                              Container(
-                                                width: 70,
-                                                height: 69,
-                                                decoration:  BoxDecoration(image: DecorationImage(
-                                                  image: NetworkImage("https://cdn1.ntv.com.tr/gorsel/tPBrSZ8drkSMDkuoQcs5Zw.jpg?width=1000&mode=crop&scale=both"),
-                                                ),),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                        const SizedBox(width: 12),
-                                        Container(
-                                          width: 235,
-                                          height: 64,
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.center,
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Container(
-                                                width: 235,
-                                                height: 30,
-                                                child: Row(
-                                                  mainAxisSize: MainAxisSize.min,
-                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                                  children: [
-                                                    Text(
-                                                      'Kız Kulesi',
-                                                      style: TextStyle(
-                                                        color: Color(0xFF191919),
-                                                        fontSize: 18,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w700,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                    const SizedBox(width: 35),
-                                                    Text(
-                                                      '90 TL',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 20,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w700,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                              Container(
-                                                width: 235,
-                                                height: 34,
-                                                padding: const EdgeInsets.symmetric(vertical: 10),
-                                                child: Column(
-                                                  mainAxisSize: MainAxisSize.min,
-                                                  mainAxisAlignment: MainAxisAlignment.start,
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text(
-                                                      'Üsküdar1 / İstanbul',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 12,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w400,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  const SizedBox(height: 12),
-                                  Container(
-                                    height: 81,
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.start,
-                                            crossAxisAlignment: CrossAxisAlignment.center,
-                                            children: [
-                                              Container(
-                                                width: 70,
-                                                height: 69,
-                                                decoration:  BoxDecoration(image: DecorationImage(
-                                                  image: AssetImage("assets/images/galatakulesi.png"),
-                                                ),),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                        const SizedBox(width: 12),
-                                        Container(
-                                          width: 235,
-                                          height: 64,
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.center,
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Container(
-                                                width: 235,
-                                                height: 30,
-                                                child: Row(
-                                                  mainAxisSize: MainAxisSize.min,
-                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                                  children: [
-                                                    Text(
-                                                      'Kız Kulesi',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 20,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w700,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                    const SizedBox(width: 35),
-                                                    Text(
-                                                      '90 TL',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 20,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w700,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                              Container(
-                                                width: 235,
-                                                height: 34,
-                                                padding: const EdgeInsets.symmetric(vertical: 10),
-                                                child: Column(
-                                                  mainAxisSize: MainAxisSize.min,
-                                                  mainAxisAlignment: MainAxisAlignment.start,
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text(
-                                                      'Üsküdar / İstanbul',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 12,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w400,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  const SizedBox(height: 12),
-                                  Container(
-                                    height: 81,
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.start,
-                                            crossAxisAlignment: CrossAxisAlignment.center,
-                                            children: [
-                                              Container(
-                                                width: 70,
-                                                height: 69,
-                                                decoration: BoxDecoration(color: Color(0xFFD9D9D9)),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                        const SizedBox(width: 12),
-                                        Container(
-                                          width: 235,
-                                          height: 64,
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.center,
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Container(
-                                                width: 235,
-                                                height: 30,
-                                                child: Row(
-                                                  mainAxisSize: MainAxisSize.min,
-                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                                  children: [
-                                                    Text(
-                                                      'Kız Kulesi',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 20,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w700,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                    const SizedBox(width: 35),
-                                                    Text(
-                                                      '90 TL',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 20,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w700,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                              Container(
-                                                width: 235,
-                                                height: 34,
-                                                padding: const EdgeInsets.symmetric(vertical: 10),
-                                                child: Column(
-                                                  mainAxisSize: MainAxisSize.min,
-                                                  mainAxisAlignment: MainAxisAlignment.start,
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text(
-                                                      'Üsküdar / İstanbul',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 12,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w400,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  const SizedBox(height: 12),
-                                  Container(
-                                    height: 81,
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.start,
-                                            crossAxisAlignment: CrossAxisAlignment.center,
-                                            children: [
-                                              Container(
-                                                width: 70,
-                                                height: 69,
-                                                decoration: BoxDecoration(color: Color(0xFFD9D9D9)),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                        const SizedBox(width: 12),
-                                        Container(
-                                          width: 235,
-                                          height: 64,
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.center,
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Container(
-                                                width: 235,
-                                                height: 30,
-                                                child: Row(
-                                                  mainAxisSize: MainAxisSize.min,
-                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                                  children: [
-                                                    Text(
-                                                      'Kız Kulesi',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 20,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w700,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                    const SizedBox(width: 35),
-                                                    Text(
-                                                      '90 TL',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 20,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w700,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                              Container(
-                                                width: 235,
-                                                height: 34,
-                                                padding: const EdgeInsets.symmetric(vertical: 10),
-                                                child: Column(
-                                                  mainAxisSize: MainAxisSize.min,
-                                                  mainAxisAlignment: MainAxisAlignment.start,
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text(
-                                                      'Üsküdar / İstanbul',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 12,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w400,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  const SizedBox(height: 12),
-                                  Container(
-                                    height: 81,
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.start,
-                                            crossAxisAlignment: CrossAxisAlignment.center,
-                                            children: [
-                                              Container(
-                                                width: 70,
-                                                height: 69,
-                                                decoration: BoxDecoration(color: Color(0xFFD9D9D9)),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                        const SizedBox(width: 12),
-                                        Container(
-                                          width: 235,
-                                          height: 64,
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.center,
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Container(
-                                                width: 235,
-                                                height: 30,
-                                                child: Row(
-                                                  mainAxisSize: MainAxisSize.min,
-                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                                  children: [
-                                                    Text(
-                                                      'Kız Kulesi',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 20,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w700,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                    const SizedBox(width: 35),
-                                                    Text(
-                                                      '90 TL',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 20,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w700,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                              Container(
-                                                width: 235,
-                                                height: 34,
-                                                padding: const EdgeInsets.symmetric(vertical: 10),
-                                                child: Column(
-                                                  mainAxisSize: MainAxisSize.min,
-                                                  mainAxisAlignment: MainAxisAlignment.start,
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text(
-                                                      'Üsküdar / İstanbul',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 12,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w400,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
+
+
+
+                                  
                                 ],
                               ),
                             ),

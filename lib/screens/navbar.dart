@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_screen/screens/profile.dart';
+import 'package:login_screen/screens/search.dart';
 
 class Navbar extends StatelessWidget {
   const Navbar({Key? key}) : super(key: key);
@@ -21,14 +22,15 @@ class Navbar extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.search),
             onPressed: () {
-              // Keşfet fonksiyonu
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => SearchBarScreen(),));
+
+
             },
           ),
           IconButton(
             icon: Icon(Icons.bookmark),
-            onPressed: () {
-
-            },
+            onPressed: () {},
           ),
           IconButton(
             icon: Icon(Icons.person),

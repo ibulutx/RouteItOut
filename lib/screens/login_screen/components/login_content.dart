@@ -66,6 +66,7 @@ class _LoginContentState extends State<LoginContent>
           padding: const EdgeInsets.symmetric(vertical: 14),
           shape: const StadiumBorder(),
           backgroundColor: kSecondaryColor,
+          foregroundColor: Colors.white,
           elevation: 8,
           shadowColor: kTuruncu,
         ),
@@ -187,12 +188,12 @@ class _LoginContentState extends State<LoginContent>
     return Stack(
       children: [
         const Positioned(
-          top: 136,
+          top: 90,
           left: 24,
           child: TopText(),
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 100),
+          padding: const EdgeInsets.only(top: 22),
           child: Stack(
             children: [
               Column(
@@ -211,7 +212,7 @@ class _LoginContentState extends State<LoginContent>
         const Align(
           alignment: Alignment.bottomCenter,
           child: Padding(
-            padding: EdgeInsets.only(bottom: 50),
+            padding: EdgeInsets.only(bottom: 0),
             child: BottomText(),
           ),
         ),

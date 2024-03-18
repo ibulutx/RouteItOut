@@ -9,14 +9,6 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-  /* void customLaunch(command) async {
-    if (await canLaunch(command)) {
-      await launch(command);
-    } else {
-      print('$command bulunamadı');
-    }
-  }*/
-
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
