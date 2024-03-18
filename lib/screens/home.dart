@@ -372,7 +372,9 @@ class Iphone13141 extends StatelessWidget {
                                         Container(
                                           width: 178,
                                           height: 161,
-                                          decoration: BoxDecoration(color: Color(0xFFD9D9D9)),
+                                          decoration: const BoxDecoration(image: DecorationImage(
+                                            image: NetworkImage("https://cdn1.ntv.com.tr/gorsel/tPBrSZ8drkSMDkuoQcs5Zw.jpg?width=1000&mode=crop&scale=both"),
+                                          ),),
                                         ),
                                       ],
                                     ),
@@ -456,7 +458,9 @@ class Iphone13141 extends StatelessWidget {
                                         Container(
                                           width: 178,
                                           height: 161,
-                                          decoration: BoxDecoration(color: Color(0xFFD9D9D9)),
+                                          decoration: BoxDecoration(image: DecorationImage(
+                                            image: NetworkImage("https://cdn1.ntv.com.tr/gorsel/tPBrSZ8drkSMDkuoQcs5Zw.jpg?width=1000&mode=crop&scale=both"),
+                                          ),),
                                         ),
                                       ],
                                     ),
@@ -611,7 +615,9 @@ class Iphone13141 extends StatelessWidget {
                                               Container(
                                                 width: 70,
                                                 height: 69,
-                                                decoration: BoxDecoration(color: Color(0xFFD9D9D9)),
+                                                decoration: BoxDecoration(image: DecorationImage(
+                                                  image: NetworkImage("https://cdn1.ntv.com.tr/gorsel/tPBrSZ8drkSMDkuoQcs5Zw.jpg?width=1000&mode=crop&scale=both"),
+                                                ),),
                                               ),
                                             ],
                                           ),
@@ -702,7 +708,9 @@ class Iphone13141 extends StatelessWidget {
                                               Container(
                                                 width: 70,
                                                 height: 69,
-                                                decoration: BoxDecoration(color: Color(0xFFD9D9D9)),
+                                                decoration:  BoxDecoration(image: DecorationImage(
+                                                  image: NetworkImage("https://cdn1.ntv.com.tr/gorsel/tPBrSZ8drkSMDkuoQcs5Zw.jpg?width=1000&mode=crop&scale=both"),
+                                                ),),
                                               ),
                                             ],
                                           ),
@@ -793,7 +801,9 @@ class Iphone13141 extends StatelessWidget {
                                               Container(
                                                 width: 70,
                                                 height: 69,
-                                                decoration: BoxDecoration(color: Color(0xFFD9D9D9)),
+                                                decoration:  BoxDecoration(image: DecorationImage(
+                                                  image: NetworkImage("https://cdn1.ntv.com.tr/gorsel/tPBrSZ8drkSMDkuoQcs5Zw.jpg?width=1000&mode=crop&scale=both"),
+                                                ),),
                                               ),
                                             ],
                                           ),
@@ -884,7 +894,9 @@ class Iphone13141 extends StatelessWidget {
                                               Container(
                                                 width: 70,
                                                 height: 69,
-                                                decoration: BoxDecoration(color: Color(0xFFD9D9D9)),
+                                                decoration:  BoxDecoration(image: DecorationImage(
+                                                  image: NetworkImage("https://cdn1.ntv.com.tr/gorsel/tPBrSZ8drkSMDkuoQcs5Zw.jpg?width=1000&mode=crop&scale=both"),
+                                                ),),
                                               ),
                                             ],
                                           ),
@@ -975,7 +987,9 @@ class Iphone13141 extends StatelessWidget {
                                               Container(
                                                 width: 70,
                                                 height: 69,
-                                                decoration: BoxDecoration(color: Color(0xFFD9D9D9)),
+                                                decoration:  BoxDecoration(image: DecorationImage(
+                                                  image: NetworkImage("https://cdn1.ntv.com.tr/gorsel/tPBrSZ8drkSMDkuoQcs5Zw.jpg?width=1000&mode=crop&scale=both"),
+                                                ),),
                                               ),
                                             ],
                                           ),
