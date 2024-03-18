@@ -490,8 +490,7 @@ class Kesfet extends StatelessWidget {
                                               decoration: BoxDecoration(
                                                 image: DecorationImage(
                                                   image: AssetImage(
-                                                    "assets/images/kizkulesi.png",
-
+                                                    "assets/images/kizkulesi2.png",
                                                   ),
                                                 ),
                                               ),
@@ -709,7 +708,7 @@ class Kesfet extends StatelessWidget {
                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                   children: [
                                                     Text(
-                                                      'Üsküdar / İstanbul',
+                                                      'Beşiktaş/ İstanbul',
                                                       style: TextStyle(
                                                         color: Colors.black,
                                                         fontSize: 12,
@@ -745,100 +744,7 @@ class Kesfet extends StatelessWidget {
                                                 width: 70,
                                                 height: 69,
                                                 decoration:  BoxDecoration(image: DecorationImage(
-                                                  image: NetworkImage("https://cdn1.ntv.com.tr/gorsel/tPBrSZ8drkSMDkuoQcs5Zw.jpg?width=1000&mode=crop&scale=both"),
-                                                ),),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                        const SizedBox(width: 12),
-                                        Container(
-                                          width: 235,
-                                          height: 64,
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.center,
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Container(
-                                                width: 235,
-                                                height: 30,
-                                                child: Row(
-                                                  mainAxisSize: MainAxisSize.min,
-                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                                  children: [
-                                                    Text(
-                                                      'Kız Kulesi',
-                                                      style: TextStyle(
-                                                        color: Color(0xFF191919),
-                                                        fontSize: 18,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w700,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                    const SizedBox(width: 35),
-                                                    Text(
-                                                      '90 TL',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 20,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w700,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                              Container(
-                                                width: 235,
-                                                height: 34,
-                                                padding: const EdgeInsets.symmetric(vertical: 10),
-                                                child: Column(
-                                                  mainAxisSize: MainAxisSize.min,
-                                                  mainAxisAlignment: MainAxisAlignment.start,
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text(
-                                                      'Üsküdar / İstanbul',
-                                                      style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontSize: 12,
-                                                        fontFamily: 'Poppins',
-                                                        fontWeight: FontWeight.w400,
-                                                        height: 0,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  const SizedBox(height: 12),
-                                  Container(
-                                    height: 81,
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment: MainAxisAlignment.start,
-                                            crossAxisAlignment: CrossAxisAlignment.center,
-                                            children: [
-                                              Container(
-                                                width: 70,
-                                                height: 69,
-                                                decoration:  BoxDecoration(image: DecorationImage(
-                                                  image: NetworkImage("https://cdn1.ntv.com.tr/gorsel/tPBrSZ8drkSMDkuoQcs5Zw.jpg?width=1000&mode=crop&scale=both"),
+                                                  image: AssetImage("assets/images/galatakulesi.png"),
                                                 ),),
                                               ),
                                             ],
@@ -895,7 +801,7 @@ class Kesfet extends StatelessWidget {
                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                   children: [
                                                     Text(
-                                                      'Üsküdar / İstanbul',
+                                                      'Beyoğlu / İstanbul',
                                                       style: TextStyle(
                                                         color: Colors.black,
                                                         fontSize: 12,
@@ -931,7 +837,7 @@ class Kesfet extends StatelessWidget {
                                                 width: 70,
                                                 height: 69,
                                                 decoration:  BoxDecoration(image: DecorationImage(
-                                                  image: NetworkImage("https://cdn1.ntv.com.tr/gorsel/tPBrSZ8drkSMDkuoQcs5Zw.jpg?width=1000&mode=crop&scale=both"),
+                                                  image: AssetImage("assets/images/kizkulesi2.png"),
                                                 ),),
                                               ),
                                             ],
@@ -1025,6 +931,99 @@ class Kesfet extends StatelessWidget {
                                                 height: 69,
                                                 decoration:  BoxDecoration(image: DecorationImage(
                                                   image: NetworkImage("https://cdn1.ntv.com.tr/gorsel/tPBrSZ8drkSMDkuoQcs5Zw.jpg?width=1000&mode=crop&scale=both"),
+                                                ),),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        const SizedBox(width: 12),
+                                        Container(
+                                          width: 235,
+                                          height: 64,
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                width: 235,
+                                                height: 30,
+                                                child: Row(
+                                                  mainAxisSize: MainAxisSize.min,
+                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                                  children: [
+                                                    Text(
+                                                      'Kız Kulesi',
+                                                      style: TextStyle(
+                                                        color: Color(0xFF191919),
+                                                        fontSize: 18,
+                                                        fontFamily: 'Poppins',
+                                                        fontWeight: FontWeight.w700,
+                                                        height: 0,
+                                                      ),
+                                                    ),
+                                                    const SizedBox(width: 35),
+                                                    Text(
+                                                      '90 TL',
+                                                      style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontSize: 20,
+                                                        fontFamily: 'Poppins',
+                                                        fontWeight: FontWeight.w700,
+                                                        height: 0,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                              Container(
+                                                width: 235,
+                                                height: 34,
+                                                padding: const EdgeInsets.symmetric(vertical: 10),
+                                                child: Column(
+                                                  mainAxisSize: MainAxisSize.min,
+                                                  mainAxisAlignment: MainAxisAlignment.start,
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      'Üsküdar1 / İstanbul',
+                                                      style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontSize: 12,
+                                                        fontFamily: 'Poppins',
+                                                        fontWeight: FontWeight.w400,
+                                                        height: 0,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  const SizedBox(height: 12),
+                                  Container(
+                                    height: 81,
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisAlignment: MainAxisAlignment.start,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Container(
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                            children: [
+                                              Container(
+                                                width: 70,
+                                                height: 69,
+                                                decoration:  BoxDecoration(image: DecorationImage(
+                                                  image: AssetImage("assets/images/galatakulesi.png"),
                                                 ),),
                                               ),
                                             ],
