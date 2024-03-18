@@ -13,10 +13,14 @@ class FigmaToCodeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: const Color.fromARGB(255, 18, 32, 47),
       ),
       home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Route It Out'),
+        ),
         body: Stack(
           children: [ ListView(children: [
             Kesfet(),
@@ -42,7 +46,7 @@ class Kesfet extends StatelessWidget {
             gradient: LinearGradient(
               begin: Alignment(0.00, -1.00),
               end: Alignment(0, 1),
-              colors: [Color(0xFFC6EEFF), Colors.white],
+              colors: [Colors.white, Colors.white],
             ),
           ),
           child: Column(
@@ -106,14 +110,6 @@ class Kesfet extends StatelessWidget {
                                                     shape: RoundedRectangleBorder(
                                                       borderRadius: BorderRadius.circular(32),
                                                     ),
-                                                  ),
-                                                  child: Row(
-                                                    mainAxisSize: MainAxisSize.min,
-                                                    mainAxisAlignment: MainAxisAlignment.center,
-                                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                                    children: [
-
-                                                    ],
                                                   ),
                                                 ),
                                               ),
@@ -199,14 +195,13 @@ class Kesfet extends StatelessWidget {
                                                         crossAxisAlignment: CrossAxisAlignment.center,
                                                         children: [
                                                           SizedBox(
-                                                            width: 66,
+                                                            width: 80,
                                                             child: Text(
-                                                              'Keşfet',
+                                                              '',
                                                               style: TextStyle(
                                                                 color: Colors.black,
-                                                                fontSize: 20,
+                                                                fontSize: 15,
                                                                 fontFamily: 'Poppins',
-                                                                fontWeight: FontWeight.w700,
                                                                 height: 0,
                                                               ),
                                                             ),
@@ -242,7 +237,7 @@ class Kesfet extends StatelessWidget {
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
                                               Container(
-                                                height: 84,
+                                                height: 104,
                                                 child:Column(
                                                   mainAxisSize: MainAxisSize.min,
                                                   mainAxisAlignment: MainAxisAlignment.start,
@@ -256,8 +251,6 @@ class Kesfet extends StatelessWidget {
                                                         crossAxisAlignment: CrossAxisAlignment.start,
                                                         children: [
                                                           Container(
-
-
                                                               child: TextField(
                                                                 decoration: InputDecoration(
                                                                   labelText: 'Search',

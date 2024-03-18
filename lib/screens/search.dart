@@ -21,7 +21,12 @@ class SearchBarScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('Hızlı Keşfet'),
+        backgroundColor: Colors.black,
+        title: Text('Hızlı Keşfet',
+          style: TextStyle(
+            fontSize: 24,
+            color: Colors.white,
+          ),),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
@@ -77,11 +82,7 @@ class SearchBarScreen extends StatelessWidget {
                   description: 'Description for Galata Kulesi',
                   imageUrl: 'https://images.pexels.com/photos/14665217/pexels-photo-14665217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
                 ),
-                SearchResultCard(
-                  title: 'Search Result 4',
-                  description: 'Description for Search Result 4',
-                  imageUrl: 'https://via.placeholder.com/150',
-                ),
+
               ],
             ),
           ),
@@ -106,10 +107,13 @@ class SearchResultCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: Colors.orange.shade100,
+
       elevation: 3,
       margin: EdgeInsets.symmetric(vertical: 8),
       child: ListTile(
         title: Text(title),
+        textColor: Colors.black,
         subtitle: Text(description),
         leading: SizedBox(
           width: 100,

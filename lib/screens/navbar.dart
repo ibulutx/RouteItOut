@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_screen/screens/kaydedilenler.dart';
 import 'package:login_screen/screens/profile.dart';
 import 'package:login_screen/screens/search.dart';
 
@@ -9,18 +10,20 @@ class Navbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 60,
-      color: Colors.blue,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           IconButton(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home,
+            color: Colors.black,),
             onPressed: () {
               // Anasayfa fonksiyonu
             },
           ),
           IconButton(
-            icon: Icon(Icons.search),
+            icon: Icon(Icons.search,
+            color: Colors.black),
             onPressed: () {
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SearchBarScreen(),));
@@ -29,11 +32,17 @@ class Navbar extends StatelessWidget {
             },
           ),
           IconButton(
-            icon: Icon(Icons.bookmark),
-            onPressed: () {},
+            icon: Icon(Icons.bookmark,
+                color: Colors.black),
+            onPressed: () {
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => ExplorePage(),));
+
+            },
           ),
           IconButton(
-            icon: Icon(Icons.person),
+            icon: Icon(Icons.person,
+                color: Colors.black),
             onPressed: () {
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => ProfilePage(),));
